@@ -1,10 +1,8 @@
-console.log("LOL");
-
 let palindromeInputElem = document.getElementById('palindrome_textarea');
 let palindromeResultElem = document.getElementById('palindrome_result');
-var filterRegExp = new RegExp(/[^0123456789А-ЯЁа-яёA-Za-z]/g);
-
 let palindromeFilteredElem = document.getElementById('palindrome_filtered');
+
+var filterRegExp = new RegExp(/[^0123456789А-ЯЁа-яёA-Za-z]/g);
 
 palindromeInputElem.addEventListener('input', checkPalindrome);
 
@@ -13,7 +11,7 @@ function checkPalindrome() {
 }
 
 function returnAnswer(inputText) {
-    if (!inputText) return 'Палиндром не введён';
+    if (!inputText) return 'Палиндром не введен';
     //let palindromeFiltered = filter(this.value)
     //palindromeFilteredElem.innerText = palindromeFiltered;
     return isPalindrome(filter(inputText)) ? 'Палиндром' : 'Не палиндром';    
