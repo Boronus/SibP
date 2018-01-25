@@ -1,9 +1,37 @@
 body {
     font-size: 20px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
 }
 
 .palindrome-form {
     display: inline-block;
-    text-align: left;
+    text-align: left; 
+    padding: 10px;
+    border: rgb(169, 169, 169) solid 1px;
+    background: lightgray;
 }
+
+.palindrome-textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: rgb(100, 100, 100);
+    min-width: 250px;
+}
+
+.palindrome-textarea::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+.palindrome-textarea:focus {
+    outline: none;
+}
+
+.palindrome-result {
+    text-align: center;
+    margin-top: 5px;
+    border: rgb(169, 169, 169) solid 1px;
+    background: white;
+}
+
