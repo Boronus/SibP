@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <form class="palindrome-form">
+        <input type="text" placeholder="Введите текст" id="palindrome_text" />
+
+        <div><p>Использовать только символы:</p></div>
+        <input type="checkbox" value="Пауза" id="palindrome_letters_ru" />
+        <label for="palindrome_letters_ru">Символы кириллицы</label><br>
+        <input type="checkbox" value="Очистить" id="palindrome_letters_en" />
+        <label for="palindrome_letters_en">Символы латиницы</label><br>
+        <input type="checkbox" value="Очистить" id="palindrome_numbers" />
+        <label for="palindrome_numbers">Цифры</label><br>
+
+        <div id="palindrome_filtered"></div>
+        <div id="palindrome_result"></div>
+    </form>
+    <script src="bundle.js"></script>
+</body>
+</html>

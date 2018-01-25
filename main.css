@@ -1,0 +1,9 @@
+body {
+    font-size: 20px;
+    text-align: center;
+}
+
+.palindrome-form {
+    display: inline-block;
+    text-align: left;
+}
