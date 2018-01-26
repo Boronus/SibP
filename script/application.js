@@ -7,13 +7,11 @@ var filterRegExp = new RegExp(/[^0123456789А-ЯЁа-яёA-Za-z]/g);
 palindromeInputElem.addEventListener('input', checkPalindrome);
 
 function checkPalindrome() {
-    palindromeResultElem.innerText = returnAnswer(this.value);    
+    palindromeResultElem.innerText = returnAnswer(this.value);
 }
 
 function returnAnswer(inputText) {
     if (!inputText) return 'Палиндром не введен';
-    //let palindromeFiltered = filter(this.value)
-    //palindromeFilteredElem.innerText = palindromeFiltered;
     return isPalindrome(filter(inputText)) ? 'Палиндром' : 'Не палиндром';    
 }
 

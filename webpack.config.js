@@ -10,13 +10,13 @@ module.exports = {
     },
 
     plugins: [
-        new UglifyJsPlugin(/*{
+        /*new UglifyJsPlugin({
             compress: {
                 warnings:false,
                 drop_console:true,
                 unsafe:true
             }
-        }*/)
+        })*/
     ],
     module: {
         loaders: [           
