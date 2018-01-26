@@ -1,5 +1,5 @@
 body {
-    font-size: 20px;
+    font-size: 1.3em;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #646464;
@@ -35,4 +35,10 @@ body {
     border: #a9a9a9 solid 1px;
     background: #ffffff;
 }
+/*
+@media screen and (max-width: 480px) {
+    .palindrome-form {
+        font-size: 1.7em;
+    }    
+}*/
 
